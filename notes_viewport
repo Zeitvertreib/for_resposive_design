@@ -1,0 +1,40 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+// apple standard
+
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+@-ms-viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+media-type and (media-feature)s
+// kleiner als 600px wird die breite auf 100% setzen.. nutze float:left;
+@media (max-width: 600px){
+    .selector{
+        width: 100%;
+    }
+}
+
+#consider @print
+@media print {
+// @media not screen, screen and (max.width:400px){
+// not screen und/oder screens, die kleiner als 400px sind
+    nav, .ad{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+unsuported browsers
+<!--[if lt ie9]>
+    <link rel="stylesheet" href="is.css">
+<!--[endif]-->
+
+
+scootjehl respond -> github
