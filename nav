@@ -1,0 +1,48 @@
+$('.handle').on('click', function(){
+    $('nav ul').toggleClass('showing');
+});
+
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul{
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+}
+
+nac ul il {
+    display: inline-block;
+}
+.handle{
+    width:100%
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+}
+
+@medis screen and (max-width){
+    nav ul il {
+        box-sizing: border-box;
+        width:100%;
+    }
+    .handle {
+        display: block;
+    }
+    .showing {
+        max-height: 20em;
+    }
+
+}
+
